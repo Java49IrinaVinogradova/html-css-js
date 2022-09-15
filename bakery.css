@@ -1,0 +1,45 @@
+.logo {
+    text-align: center;
+    font-size: 5em;
+}
+
+.main-class {
+
+}
+.details-container {
+text-align: center;
+}
+
+.details-image {
+width: 700px;
+}
+
+.details-title {
+display:inline-block;
+
+}
+
+.thumbnails-list {
+list-style: none;
+display: block;
+
+}
+
+.thumbnails-item {
+
+}
+
+.thumbnails-anchor {
+    text-decoration: none;
+}
+
+.thumbnails-image {
+width: 200px;
+
+}
+
+.thumbnails-title {
+display: block;
+font-size: 1.5em;
+
+}
