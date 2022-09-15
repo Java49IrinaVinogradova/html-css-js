@@ -1,6 +1,8 @@
 .logo {
     text-align: center;
     font-size: 5em;
+    color: #383081;
+    ;
 }
 
 .main-class {
@@ -8,6 +10,7 @@
 }
 .details-container {
 text-align: center;
+
 }
 
 .details-image {
@@ -16,13 +19,27 @@ width: 700px;
 
 .details-title {
 display:inline-block;
+font-size: 1.3em;
+text-align: left;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left:  200px;
+margin-right: 200px;
 
 }
 
-.thumbnails-list {
+.thumbnails-list1 {
 list-style: none;
-display: block;
+display: flex;
+justify-content: space-evenly;
 
+
+}
+
+.thumbnails-list2{
+    list-style: none;
+    display: flex;
+justify-content: space-evenly;
 }
 
 .thumbnails-item {
@@ -35,11 +52,17 @@ display: block;
 
 .thumbnails-image {
 width: 200px;
+height: 150px;
 
 }
 
 .thumbnails-title {
 display: block;
 font-size: 1.5em;
+color: #383081;
 
+}
+
+body {
+    background-color: #EEF1FF;
 }
