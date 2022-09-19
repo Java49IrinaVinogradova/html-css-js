@@ -1,68 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEF1FF;
+}
 .logo {
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     color: #383081;
-    ;
+    background-color: #FFF6BF;
+    display: block;
 }
 
 .main-class {
 
 }
 .details-container {
-text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 2.5vh;
 
 }
 
 .details-image {
-width: 700px;
+width: 70vw;
+height: 60vw;
+border-radius: 25%;
+
 }
 
 .details-title {
-display:inline-block;
-font-size: 1.3em;
-text-align: left;
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left:  200px;
-margin-right: 200px;
+display: block;
+color: #16123c;
+margin-top: 2vh;
 
 }
 
-.thumbnails-list1 {
+.thumbnails-list {
 list-style: none;
 display: flex;
-justify-content: space-evenly;
-
+flex-direction: row;
+flex-wrap: wrap;
+max-height: 25vh;
+overflow-y: auto;
+justify-content: space-around;
+padding-left: 0;
 
 }
 
-.thumbnails-list2{
-    list-style: none;
-    display: flex;
-justify-content: space-evenly;
-}
+
 
 .thumbnails-item {
+width: 20vw;
+height: 20vw;
+margin-top: 2vh;
+border: solid 1.5px #383081;
+border-radius: 25%;
+overflow:auto;
+
+
 
 }
 
 .thumbnails-anchor {
     text-decoration: none;
+
+    
 }
 
 .thumbnails-image {
-width: 200px;
-height: 150px;
+width: 20vw;
+height: 15vw;
+display: block;
+
 
 }
 
 .thumbnails-title {
-display: block;
-font-size: 1.5em;
+    display: block;
+text-align: center;
+height: 5vw;
+background-color: #FFF6BF;
 color: #383081;
 
+
+
 }
 
-body {
-    background-color: #EEF1FF;
-}
