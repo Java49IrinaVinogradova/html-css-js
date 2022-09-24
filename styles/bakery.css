@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #EEF1FF;
+    
 }
 .logo {
     text-align: center;
@@ -24,8 +25,8 @@ margin-top: 2.5vh;
 
 .details-image {
 width: 70vw;
-height: 60vw;
-border-radius: 25%;
+height: 55vw;
+border-radius: 20%;
 
 }
 
@@ -56,7 +57,7 @@ height: 20vw;
 margin-top: 2vh;
 border: solid 1.5px #383081;
 border-radius: 25%;
-overflow:auto;
+overflow:hidden;
 
 
 
