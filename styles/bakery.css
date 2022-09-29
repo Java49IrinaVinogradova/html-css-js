@@ -3,6 +3,11 @@
     src: url("fonts/LAKESHOR-webfont.svg");
     src: url("fonts/LAKESHOR-webfont.woff");
 }
+@font-face {
+    font-family: airstream;
+    src: url("fonts/Airstream-webfont.svg");
+    src: url("fonts/Airstream-webfont.woff");
+}
 
 :root {
     --thumbnails-img-width: 20vw;
@@ -46,6 +51,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin-bottom: 10vh;
+position: relative;
 
 }
 
@@ -59,6 +65,12 @@ border-radius: 25%;
 .details-title {
 display: block;
 color: #16123c;
+font-family: airstream;
+font-style: italic;
+background-color: #d4d4d4;
+position: absolute;
+left: 3vw;
+bottom: 2vw;
 
 
 }
@@ -72,26 +84,13 @@ max-height: 25vh;
 overflow-y: auto;
 justify-content: space-around;
 padding-left: 0;
-padding-right:  25px;
+padding-right:  2vw;
 margin: 0;
+padding-left: 2vw;
+
+}
 
 
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-    
-}
-::-webkit-scrollbar-track {
-    background: #d4d4d4;
-    border-radius: 8px
-    
-}
-::-webkit-scrollbar-thumb {
-    background: #FFF6BF;
-    border-radius: 8px;
-    border: 2px solid #d4d4d4
-}
 
 
 
@@ -129,7 +128,10 @@ height: var(--thumbnails-title-height);
 background-color: #FFF6BF;
 color: #383081;
 
-
+}
+.thumbnails-item:hover {
+    transform: scale(1.1);
+   
 }
 
 @media (min-width: 560px) {
@@ -149,19 +151,38 @@ color: #383081;
         width: 40vw;
         height: 30vw;
     }
+    .details-container{
+        margin-right: 5vw;
+        margin-top: 5vw;
+    }
+    .details-title {
+        left: 0;
+      
+    }
     :root {
         --thumbnails-img-width: 12vw;
         --thumbnails-img-height: 8vw;
-        --thumbnails-title-height: calc(var(--thumbnails-img-height)*0.33);
+        --thumbnails-title-height: calc(var(--thumbnails-img-height)*0.25);
     }
 
  
 }
-
 @media (min-width: 900px) {
-    .details-image {
-        width: 40vw;
-        height: 30vw;
+    ::-webkit-scrollbar {
+        width: 12px;
+        
     }
-    
+    ::-webkit-scrollbar-track {
+        background: #d4d4d4;
+        border-radius: 8px
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #FFF6BF;
+        border-radius: 8px;
+        border: 2px solid #d4d4d4
+    }
+
+       
 }
+
