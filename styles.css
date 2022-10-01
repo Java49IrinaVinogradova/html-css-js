@@ -37,5 +37,17 @@ body {
     
 }
 
+@media (min-width: 560px) {
+    :root {
+        --cell-widht:4vw;
+        --cell-height:4vw;
+    }
+}
 
+@media (min-width: 900px) {
+    :root {
+        --cell-widht:3vw;
+        --cell-height:3vw;
+    }
+}
 
