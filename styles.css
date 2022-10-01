@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+:root {
+    --cell-widht:5vw;
+    --cell-height:5vw;
+}
+.board {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell-black {
+    width: var( --cell-widht);
+    height: var( --cell-height);
+    background-color: black;
+   
+}
+.cell-white {
+    width: var( --cell-widht);
+    height: var(--cell-height);
+    background-color: white;
+    
+}
+
+
+
