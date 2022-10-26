@@ -46,6 +46,14 @@ body {
     flex-grow: 1;
 
 }
+
+.hidden.main-class {
+
+    --thumbnails-img-width: 35vw;
+    --thumbnails-img-height: 25vw;
+    --thumbnails-title-height: calc(var(--thumbnails-img-height)*0.33);
+}
+
 .details-container {
 display: flex;
 flex-direction: column;
@@ -53,6 +61,10 @@ align-items: center;
 margin-bottom: 10vh;
 position: relative;
 
+}
+
+.hidden .details-container {
+    display: none;
 }
 
 .details-image {
@@ -91,6 +103,14 @@ padding-left: 2vw;
 
 }
 
+.hidden .thumbnails-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-height: 90vh;
+}
+
 
 
 
@@ -112,6 +132,16 @@ overflow:hidden;
     text-decoration: none;
 
     
+}
+
+.details-frame {
+    position: relative;
+}
+
+.hide-button {
+    position: absolute;
+    top: 3vh;
+    right: 4vw;
 }
 
 .thumbnails-image {
@@ -142,15 +172,31 @@ color: #383081;
         max-height: 85vh;
         order: -1;
         justify-content: flex-start;
+        
     }
+
+    .hidden .thumbnails-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-height: 85vh;
+    }
+
     .main-class{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
+
+    .hidden.main-class {
+        --thumbnails-img-width: 16vw;
+        --thumbnails-img-height: 12vw;
+        --thumbnails-title-height: calc(var(--thumbnails-img-height)* 0.25)
+    }
     .details-image{
-        width: 40vw;
-        height: 30vw;
+        width: 45vw;
+        height: 35vw;
     }
     .details-container{
         margin-right: 5vw;
@@ -160,14 +206,22 @@ color: #383081;
         left: 0;
       
     }
-    :root {
-        --thumbnails-img-width: 12vw;
-        --thumbnails-img-height: 8vw;
-        --thumbnails-title-height: calc(var(--thumbnails-img-height)*0.25);
+     
+    .thumbnails-image {
+        width: var(--thumbnails-img-width);
+        height: var(--thumbnails-img-height);
+        display: block;
+   
     }
 
- 
+    :root {
+        --thumbnails-img-width: 10vw;
+        --thumbnails-img-height: 7vw;
+        --thumbnails-title-height: calc(var(--thumbnails-img-height)*0.25);
+    }
 }
+ 
+
 @media (min-width: 900px) {
     ::-webkit-scrollbar {
         width: 12px;
@@ -184,6 +238,22 @@ color: #383081;
         border: 2px solid #d4d4d4
     }
 
+    .hidden .thumbnails-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .hidden.main-class {
+        --thumbnails-img-width: 19vw;
+        --thumbnails-img-height: 14vw;
+        --thumbnails-title-height: calc(var(--thumbnails-img-height)* 0.25)
+    }
+
+   
        
 }
+
+
 
