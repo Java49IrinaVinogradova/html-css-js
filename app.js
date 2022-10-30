@@ -20,3 +20,22 @@ console.log("Hello world");
  let op2 = 20;
  let res = sum(op1, op2);
  console.log(res)
+
+ function sumDigits(number) {
+    if(isNaN(number)) {
+        return 'NaN'
+    }
+    if(number<0) {
+        number =- number;
+    }
+     let sum = 0;
+     while(!(number == 0)) {
+        sum +=number % 10;
+        number = Math.floor(number/10);
+
+     }
+     return sum;
+    
+ }
+
+ console.log('sum=',sumDigits(123))
