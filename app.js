@@ -16,7 +16,7 @@ console.log("Hello world");
      let res = op1 + op2;
      return res;
  }
- let op1 = 10;
+ let op1 = 10; 
  let op2 = 20;
  let res = sum(op1, op2);
  console.log(res)
